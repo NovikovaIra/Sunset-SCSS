@@ -13,6 +13,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.22",
     "reset-css": "^5.0.2",
     "swiper": "^10.2.0"
   }

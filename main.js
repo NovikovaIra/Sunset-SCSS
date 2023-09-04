@@ -1,5 +1,7 @@
 import './node_modules/reset-css/sass/_reset.scss';
 import './main.scss';
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 const swiper = new Swiper('.swiper', {
@@ -32,6 +34,18 @@ menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 })
+document.getElementById("triggger").addEventListener("click", function(){
+    Fancybox.show([
+        {
+          src: "https://youtu.be/aSk-D86aOtc?si=NAuXbjgqkHTNCxqu",
+          type: "video",
+          ratio: 16 / 10,
+          width: 640,
+          height: 360,
+        },
+      ]);
+    });
+
 
 // import Swiper from 'swiper/bundle';
 
